@@ -15,7 +15,7 @@
         
         <div class="formulario">
             <h2>Crear cuenta</h2>
-            <form action="#">
+            <form action="#"method="post" enctype="multipart/form-data">
                 <div>
                     <label for="txt_nombre">Nombre completo</label>
 
@@ -63,7 +63,7 @@
         </div>
         <div>
                 <label for="img_foto">Foto (opcional)</label>
-                <input type="file" name="pic" id="img_foto" />
+                <input type="file" name="foto" id="img_foto" />
         </div>
 
 
@@ -71,7 +71,7 @@
 
 
         <div>
-            <input type="submit" value="Registrarse">
+            <button type="button" id="btn_registrar">Registrar</button>
         </div>
         </form>
     </div>
@@ -81,6 +81,11 @@
     <script src="js/cantones.js"></script>
     <script src="js/distritos.js"></script>
     <script src="js/controlador_ubicacion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
+    <script src="js/servicio_registros.js"></script>
+    <script src="js/controlador_registrar_usuarios.js"></script>
 </body>
 
 </html>

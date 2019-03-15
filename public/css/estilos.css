@@ -47,7 +47,7 @@ body{
     padding: 10px;
 
 }
-.contenedor-form input[type="submit"]{
+.contenedor-form button[type="button"]{
     outline: none;
     display: block;
     width: 100%;

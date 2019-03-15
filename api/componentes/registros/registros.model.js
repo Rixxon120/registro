@@ -8,12 +8,21 @@ let schema_registros = new mongoose.Schema(
         nacionalidad : {type : String, required: true},
         provincias : {type : String, required: true},
         cantones : {type : String, required: true},
-        distritos : {type : String, required: true},
-        hijos: {type: Number, required: false},
+        distritos : {type : String},
+        hijos: {type: Number},
         correo : {type: String, required: true},
-        foto :{type: Image, required: false}
+        foto :{type: String}
         
     }
 );
+var Schema = mongoose.Schema;
 
-module.exports = mongoose.model('mascotas', schema_mascotas);
+var img_schema= new Schema({
+    title: {type: String, require: false},
+    creator: {type: Schema.Types.ObjectId, ref: "User"},
+    extension: { type: String, require: true}
+});
+var Imagenes= mongoose.model("Imagenes",img_schema);
+module.exports= Imagenes;
+
+module.exports = mongoose.model('registros', schema_registros);
