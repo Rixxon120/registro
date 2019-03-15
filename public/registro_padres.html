@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css" ><title> Registro padres de familia</title>
+</head>
+
+<body>
+    <main>
+    <div class="contenedor-form">
+        
+        <div class="formulario">
+            <h2>Crear cuenta</h2>
+            <form action="#">
+                <div>
+                    <label for="txt_nombre">Nombre completo</label>
+
+                    <input type="text" id="txt_nombre">
+                </div>
+                <div>
+                    <label for="txt_identificacion">Cédula o pasaporte</label>
+                    <input type="text" id="txt_identificacion">
+                </div>
+                <div>
+                    <label for="txt_nacionalidad">Nacionalidad</label>
+                    <input type="text" id="txt_nacionalidad">
+                </div>
+                <div>
+
+                    <label for="slt_provincias">Provincia</label>
+                    <select id="slt_provincias">
+                        <option value="">--Selecciones una provincia--</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="slt_cantones">Cantón</label>
+                    <select id="slt_cantones">
+                        <option value="">--Seleccione un cantón--</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="slt_distritos">Distrito</label>
+                    <select id="slt_distritos">
+                        <option value="">--Seleccione un distrito--</option>
+
+
+
+                    </select>
+                </div>
+                <div>
+                    <label for="txt_hijos">Cantidad de hijos (opcional)</label>
+                    <input type="number" id="txt_hijos">
+                </div>
+                <div>
+                <label for="txt_correo">Correo</label>
+                <input type="email" id="txt_correo" placeholder="rborgec@ucenfotec.ac.cr">
+        </div>
+        <div>
+                <label for="img_foto">Foto (opcional)</label>
+                <input type="file" name="pic" id="img_foto" />
+        </div>
+
+
+
+
+
+        <div>
+            <input type="submit" value="Registrarse">
+        </div>
+        </form>
+    </div>
+    </div>
+    </main>
+    <script src="js/provincias.js"></script>
+    <script src="js/cantones.js"></script>
+    <script src="js/distritos.js"></script>
+    <script src="js/controlador_ubicacion.js"></script>
+</body>
+
+</html>

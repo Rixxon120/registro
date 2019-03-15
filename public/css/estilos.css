@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+html,button{
+    font-family: 'Montserrat', sans-serif;
+}
+.error_input{
+    border: 2px solid #ED4C67;
+}
+body{ 
+    background: rgb(7, 234, 241);
+}
+
+
+
+.contenedor-form{
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    max-width: 500px;
+    margin: 48px auto;
+    color: #fff;
+    border-radius: 5px;
+    padding: 40px;
+}
+.contenedor-form h2{
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+}
+.contenedor-form input[type="text"],
+.contenedor-form input[type="email"],
+.contenedor-form input[type="number"],
+.contenedor-form select,
+.contenedor-form input[type="file"]{
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.contenedor-form input[type="submit"]{
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    padding: 10px;
+   
+
+}
