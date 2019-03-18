@@ -98,7 +98,7 @@ let obtener_datos = () => {
 
         
 
-        registrar_usuario(nombre, identificacion, nacionalidad, provincias, cantones,distritos, hijos, correo);
+        registrar_usuario(nombre, identificacion, nacionalidad, provincias, cantones,distritos, hijos, correo, foto);
    
     
     } else {

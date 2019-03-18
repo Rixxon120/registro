@@ -57,3 +57,31 @@ body{
    
 
 }
+.tbl_usuarios{
+    width: 100%;
+    height: 300px;
+    border-collapse:collapse;
+
+}
+.tbl_usuarios td{
+    border: 1px solid black;
+}
+.tbl_usuarios thead tr{
+    background: white;
+    color: black;
+    border: 1px solid black;
+    
+}
+.tbl_usuarios thead{
+    border: 1px solid black;
+}
+.tbl_usuarios tr{
+    border-bottom: 1px solid #000;
+    
+}
+.tbl_usuarios tbody{
+    background: white;
+}
+.tbl_usuarios tr th,.tabla_info tr td {
+    padding: 20px 10px;
+}
