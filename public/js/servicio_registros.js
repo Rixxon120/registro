@@ -40,7 +40,7 @@ let registrar_usuario= (pnombre, pidentificacion, pnacionalidad, pprovincias, pc
 let listar_usuarios = () => {
     let lista_usuarios=[];
    
-     let request = $.ajax({
+    let request = $.ajax({
        url: "http://localhost:4000/api/listar_usuarios",
        method: "GET",
        data: {

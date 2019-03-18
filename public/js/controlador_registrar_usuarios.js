@@ -10,8 +10,10 @@ const input_distritos = document.querySelector('#slt_distritos');
 
 const input_hijos = document.querySelector('#txt_hijos');
 const input_correo = document.querySelector('#txt_correo');
-const input_foto = document.querySelector('#img_foto');
+
 const boton_registrar = document.querySelector('#btn_registrar');
+const input_foto= document.querySelector('#img_foto')
+
 
 let validar = () => {
     let error = false;
@@ -86,12 +88,12 @@ let obtener_datos = () => {
         let distritos = slt_distritos.value;
         let hijos = input_hijos.value;
         let correo = input_correo.value;
-        let foto = img_foto.value;
+        let foto = input_foto.value;
 
         
 
-        registrar_usuario(nombre, identificacion, nacionalidad, provincias, cantones, hijos, correo, foto);
-       
+        registrar_usuario(nombre, identificacion, nacionalidad, provincias, cantones,distritos, hijos, correo);
+   
     
     } else {
         swal.fire({
