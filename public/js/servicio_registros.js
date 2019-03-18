@@ -47,7 +47,7 @@ let listar_usuarios = () => {
        },
        dataType: "json",
        contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
-       async : false
+       async : true
      });
    
      request.done(function (res) {
@@ -58,6 +58,7 @@ let listar_usuarios = () => {
      request.fail(function (jqXHR, textStatus) {
        
      });
+     console.log(lista_usuarios);
    return lista_usuarios;
     
    };

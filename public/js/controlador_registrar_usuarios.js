@@ -57,6 +57,12 @@ let validar = () => {
     } else {
         input_cantones.classList.remove('error_input');
     }
+    if (input_distritos.value == '') {
+        error = true;
+        input_distritos.classList.add('error_input');
+    } else {
+        input_distritos.classList.remove('error_input');
+    }
    
     
     if (input_correo.value == '') {
