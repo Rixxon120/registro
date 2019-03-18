@@ -34,7 +34,7 @@ let llenar_distritos = () =>{
     for(let i = 0; i < distritos.length; i++){
         if(canton == distritos[i]['Canton_idCanton'] ){
             let nuevaOpcion = new Option(distritos[i]['nombre']);
-            nuevaOpcion.value = distritos[i]['nombre'];
+            nuevaOpcion.value = distritos[i]['idDistrito'];
             select_distritos.appendChild(nuevaOpcion);
         }
         
